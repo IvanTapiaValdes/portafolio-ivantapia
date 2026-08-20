@@ -1,0 +1,14 @@
+// ==========================================================================
+// BADGES DE HABILIDADES
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+
+.badge-skill {
+    background: $color-primario;
+    color: $color-white;
+    font-weight: 600;
+    font-size: .85rem;
+    padding: 8px 14px;
+    margin: 4px 4px 0 0;
+}

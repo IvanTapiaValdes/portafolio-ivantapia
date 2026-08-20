@@ -1,0 +1,26 @@
+// ==========================================================================
+// MAIN.SCSS — Punto de entrada único
+// Importa (mediante @use) todos los partials del proyecto.
+// No escribir estilos directamente en este archivo.
+// ==========================================================================
+
+// Utilidades (variables y mixins)
+@use "utilities/variables";
+@use "utilities/mixins";
+
+// Base
+@use "base/base";
+@use "base/tipografia";
+
+// Layout
+@use "layout/nav";
+@use "layout/header";
+@use "layout/footer";
+
+// Componentes
+@use "components/buttons";
+@use "components/cards";
+@use "components/badges";
+@use "components/carousel";
+@use "components/forms";
+@use "components/grids";

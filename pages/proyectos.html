@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Iván Tapia</title>
+
+     <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.jpg" alt="Logo de Iván Tapia Valdés">
+                Iván Tapia Valdés
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <section class="section-card">
+
+            <h1>Mis Proyectos</h1>
+
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Sitio Web Personal</h3>
+                            <p class="card-text">
+                                Desarrollo de un sitio web personal utilizando HTML y CSS.
+                                Proyecto enfocado en mostrar trabajos y habilidades
+                                profesionales de manera visual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Aplicación de Servicios HTML y CSS</h3>
+                            <p class="card-text">
+                                Ejecución de un proyecto de aplicación web que ofrece servicios utilizando HTML y CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="../assets/proyecto2.jpg"
+                             class="card-img-top"
+                             alt="Imagen de un hombre frente a un computador implementando una idea de solución para un problema o necesidades del cliente">
+                        <div class="card-body">
+                            <h3 class="card-title">Solución para clientes</h3>
+                            <p class="card-text">
+                                Implementando ideas de desarrollo para usuarios y clientes.
+                            </p>
+                            <button type="button" class="btn btn-outline-custom btn-sm" data-bs-toggle="modal" data-bs-target="#proyectoModal">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL (Bootstrap) -->
+    <div class="modal fade" id="proyectoModal" tabindex="-1" aria-labelledby="proyectoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-custom">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="proyectoModalLabel">Solución para clientes</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../assets/proyecto2.jpg" class="img-fluid rounded mb-3" alt="Imagen de un hombre frente a un computador implementando una idea de solución para un problema o necesidades del cliente">
+                    <p>
+                        Este proyecto consiste en cumplir con las necesidades del cliente y traducirlas
+                        en una solución web funcional, aplicando HTML y CSS con un enfoque
+                        mobile-first y buenas prácticas de accesibilidad.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container footer-inner">
+    <p>&copy; 2026 Iván Tapia. Todos los derechos reservados.</p>
+
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank" class="facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" class="instagram">Instagram</a>
+            <a href="https://twitter.com" target="_blank" class="twitter">Twitter</a>
+            <a href="https://linkedin.com" target="_blank" class="linkedin">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

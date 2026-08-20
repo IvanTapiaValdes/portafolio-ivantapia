@@ -1,0 +1,15 @@
+// ==========================================================================
+// FORMULARIO DE CONTACTO (Bootstrap)
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+
+.form-label {
+    font-weight: 600;
+    color: $color-primario;
+}
+
+.form-control:focus {
+    border-color: $color-primario;
+    box-shadow: $sombra-focus;
+}

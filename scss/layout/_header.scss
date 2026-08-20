@@ -1,0 +1,28 @@
+// ==========================================================================
+// HEADER DE CONTENIDO
+// (contenedor principal de página: <main class="main-content"> y sus
+// tarjetas de sección; no existe un <header> propio ya que la navbar
+// cumple ese rol, ver _nav.scss)
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.main-content {
+    @include flex-columna;
+
+    flex: 1;
+
+    padding: $espaciado-md;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.section-card {
+    @include flex-columna;
+
+    background: $color-white;
+    padding: $espaciado-lg;
+    border-radius: $radio-borde;
+}

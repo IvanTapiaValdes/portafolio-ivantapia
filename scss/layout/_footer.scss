@@ -1,0 +1,50 @@
+// ==========================================================================
+// FOOTER
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer {
+    padding: $espaciado-md;
+    background: $color-footer-bg;
+    color: $color-footer-texto;
+    text-align: center;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $espaciado-sm;
+
+    // Tablet: se acomoda en fila
+    @include respond-to(tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $espaciado-md;
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: $transicion-opacidad;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+}
+
+.facebook  { color: $color-facebook; }
+.instagram { color: $color-instagram; }
+.twitter   { color: $color-twitter; }
+.linkedin  { color: $color-linkedin; }

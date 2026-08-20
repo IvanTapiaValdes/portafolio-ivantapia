@@ -1,0 +1,76 @@
+// ==========================================================================
+// CARDS (Bootstrap)
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Card de la página de inicio
+.home-card {
+    border: none;
+    border-radius: $radio-borde;
+    background: $color-bg;
+    @include card-hover;
+
+    .card-title {
+        color: $color-primario;
+    }
+}
+
+// Card de proyectos
+.project-card {
+    border: none;
+    border-radius: $radio-borde;
+    background: $color-bg;
+    @include card-hover;
+
+    .card-title {
+        color: $color-primario;
+    }
+
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+// Card de servicios
+.service-card {
+    border: none;
+    border-radius: $radio-borde;
+    background: $color-bg;
+    @include card-hover;
+
+    .card-title {
+        color: $color-primario;
+    }
+
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+}
+
+// Card "Sobre mí" / Contacto (sin efecto hover)
+.about-card {
+    border: none;
+    border-radius: $radio-borde;
+    background: $color-bg;
+}
+
+// Modal (Bootstrap)
+.modal-custom {
+    .modal-header {
+        background: $color-primario;
+        color: $color-white;
+        border-bottom: none;
+
+        .btn-close {
+            filter: invert(1);
+        }
+    }
+
+    .modal-title {
+        font-weight: 700;
+    }
+}

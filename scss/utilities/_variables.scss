@@ -1,0 +1,48 @@
+// ==========================================================================
+// VARIABLES GLOBALES
+// ==========================================================================
+
+// Colores principales
+$color-primario: #1E3A8A;
+$color-primario-hover: #16307a;
+$color-acento: #F59E0B;
+
+// Colores de superficie
+$color-bg: #F5F7FA;
+$color-white: #ffffff;
+$color-texto: #2D3748;
+
+// Footer
+$color-footer-bg: #111111;
+$color-footer-texto: #ffffff;
+
+// Redes sociales
+$color-facebook: #1877F2;
+$color-instagram: #E4405F;
+$color-twitter: #1DA1F2;
+$color-linkedin: #0A66C2;
+
+// Sombra de hover para cards
+$sombra-hover: 0 10px 20px rgba(30, 58, 138, .15);
+$sombra-focus: 0 0 0 .25rem rgba(30, 58, 138, .15);
+
+// Tipografía
+$font-principal: 'Poppins', sans-serif;
+
+// Bordes / radios
+$radio-borde: 10px;
+$radio-borde-sm: 8px;
+
+// Transiciones
+$transicion-rapida: .2s ease;
+$transicion-opacidad: .3s;
+
+// Espaciados
+$espaciado-sm: 15px;
+$espaciado-md: 20px;
+$espaciado-lg: 25px;
+
+// Breakpoints
+$bp-navbar: 991px;
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

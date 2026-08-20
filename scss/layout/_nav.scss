@@ -1,0 +1,52 @@
+// ==========================================================================
+// NAVBAR (Bootstrap)
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.navbar-custom {
+    background: $color-primario;
+    padding: 15px 0;
+
+    .navbar-brand {
+        color: $color-white;
+        font-weight: 700;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img {
+            width: 45px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    .nav-link {
+        color: $color-white;
+        font-weight: 600;
+
+        &:hover,
+        &.active {
+            color: $color-acento;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, .5);
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    @include respond-to(navbar) {
+        .navbar-collapse {
+            margin-top: $espaciado-sm;
+            text-align: center;
+        }
+    }
+}

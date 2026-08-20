@@ -1,0 +1,23 @@
+// ==========================================================================
+// TIPOGRAFÍA
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+
+h1 {
+    font-size: clamp(2rem, 1.4rem + 2vw, 3rem);
+    color: $color-primario;
+}
+
+h2 {
+    font-size: 2rem;
+    color: $color-primario;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 10px;
+}

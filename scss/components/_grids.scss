@@ -1,0 +1,46 @@
+// ==========================================================================
+// GRIDS RESPONSIVE
+// Mobile-first: 1 columna apilada, luego se abren en tablet/desktop.
+// ==========================================================================
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// SERVICIOS: 1 col mobile -> 2 col tablet -> 3 col desktop
+.service-grid {
+    @include grid-responsive;
+
+    @include respond-to(tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to(desktop) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.service-item {
+    background: $color-bg;
+    padding: $espaciado-md;
+    border-radius: $radio-borde-sm;
+}
+
+// CONTACTO: 1 col mobile -> 2 col lado a lado en desktop
+.contact-grid {
+    @include grid-responsive;
+
+    @include respond-to(desktop) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+// SOBRE MÍ: 1 col mobile -> 2 col lado a lado en desktop
+.about-grid {
+    @include grid-responsive;
+
+    @include respond-to(desktop) {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
