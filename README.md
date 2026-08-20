@@ -7,9 +7,9 @@ Sitio web personal desarrollado con **HTML5**, **CSS3** y **Bootstrap 5**, como 
 ```
 ├── index.html
 ├── css/
-│   └── styles.css          # CSS compilado (NO editar a mano)
+│   └── styles.css          
 ├── scss/
-│   ├── main.scss           # único punto de entrada (@use)
+│   ├── main.scss           
 │   ├── utilities/
 │   │   ├── _variables.scss
 │   │   └── _mixins.scss
